@@ -21,7 +21,7 @@ if len(sys.argv) == 4:
                 res[i] = pids[i].returncode
                 pids.pop(i, None)
             del dumps
-        pids[file] = subprocess.Popen(["./sf", thread_count, pattern, file])
+        pids[file] = subprocess.Popen(["./"+sys.argv[0][:-7]+"sf", thread_count, pattern, file])
 
     while len(pids):
         dumps = []
