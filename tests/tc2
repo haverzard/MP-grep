@@ -1,0 +1,38 @@
+Modul PAM
+Membuat modul PAM dengan key kriptografi di flash drive
+Latar Belakang
+“Es mungkin keras dan dingin, namun dibalik itu, es menyejukkan dan membawa keseimbangan bagi dunia ini. Pada tes ini, kamu akan dihadapkan dengan sebuah kotak yang telah disegel dengan sihir es yang sangat kuat. Di dalam kotak tersebut, ada sebuah kristal sihir yang dapat membantu banyak orang di negeri ini. Tugasmu adalah membuat sebuah mantra yang dapat membuka segel es tersebut dan mengambil kristal yang tersembunyi dibaliknya.”
+
+Setelah mendengarkan penjelasan tersebut kamu pun… 
+a.	Kembali ke luar portal
+b.	Melaksanakan tantangannya (Lanjutkan membaca).
+Tujuan
+Tujuan tugas ini ada beberapa:
+●	Memahami mekanisme autentikasi di GNU/Linux via PAM
+Spek Tugas
+Membuat sebuah modul PAM dengan spesifikasi berikut:
+●	Dapat digunakan (via sudo dan polkit)
+●	Sistem autentikasi (PAM)
+○	Disimpan private key dengan aman di sistem (menggunakan file permission)
+○	Disimpan public key di sebuah flash drive
+○	Saat permintaan autentikasi diminta
+■	Cek di semua flash drive untuk public key sesuai user yang meminta (dalam 1 flash drive bisa lebih dari 1 key)
+■	Enkripsi sebuah teks random dengan public key
+■	Coba dekripsi hasil teks random dengan private key
+■	Autentikasi diberikan jika berhasil
+●	Utilitas (CLI)
+○	Setup flash drive baru (generasi key dan penyimpanannya)
+○	Cek status (Cek flash drive di-setup dengan benar)
+
+Bonus: GUI berbasis GTK atau QT untuk utilitasnya
+
+Referensi
+●	Homepage PAM http://www.linux-pam.org/
+●	Public key cryptography https://en.wikipedia.org/wiki/Public-key_cryptography
+●	Salah satu contoh pustaka kriptografi https://wiki.gnupg.org/APIs
+Video yang Dikumpulkan
+Buatlah sebuah video yang menunjukkan
+1.	Setup USB
+2.	Mencoba sudo tanpa flash drive terpasang
+3.	Mencoba sudo dengan flash drive terpasang
+

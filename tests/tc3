@@ -1,0 +1,92 @@
+Low Level Calculator
+Implementasi Naive Calculator dengan Bahasa C
+Latar Belakang
+“Waktu selalu berjalan maju. Kamu bisa melakukan segalanya atau tidak melakukan apapun sama sekali, tetapi Waktu tidak akan peduli, dia akan selalu berjalan maju meninggalkan apapun yang tidak mengikutinya. Pada tes kali ini, Waktu akan melakukan sesuatu yang tidak mungkin, yaitu dia akan berjalan mundur jauh sampai sebelum teknologi tercipta. Tugasmu adalah untuk pergi bersama dengan Waktu dan jangan sampai tertinggal olehnya. Oleh karena itu, kamu perlu menciptakan beberapa teknologi sederhana pada zaman sebelum mereka tercipta agar tidak tertinggal oleh Waktu.”
+
+Setelah mendengarkan penjelasan tersebut kamu pun… 
+a.	Kembali ke luar portal
+b.	Melaksanakan tantangannya (Lanjutkan membaca).
+Tujuan
+Tujuan tugas ini ada beberapa:
+●	Biar kalian memiliki pola pikir low-level programming
+●	Biar kalian dapat memecahkan masalah secara low-level
+Spek Tugas
+Buatlah sebuah program kalkulator dalam bahasa C yang memiliki spesifikasi sebagai berikut:
+●	Kalkulator membaca string dari sebuah file.
+●	Kalkulator dapat melakukan perhitungan dengan operator-operator berikut: 
+○	* (perkalian), contoh: 2*2 akan menghasilkan 4.
+○	/ (pembagian integer), contoh: 2/2 akan menghasilkan 1, 3/2 juga akan menghasilkan 1.
+○	^ (pangkat), contoh: 2^2 akan menghasilkan 4.
+○	+ (penjumlahan), contoh: 2+2 akan menghasilkan 4.
+○	- (pengurangan), contoh: 2-2 akan menghasilkan 0.
+○	% (modulo), contoh: 2%2 akan menghasilkan 0.
+○	r (akar pangkat 2 dengan pembulatan), contoh: r9 akan menghasilkan 3, r10 juga akan menghasilkan 3.
+●	Kalkulator mampu melakukan perhitungan dengan range 0~255 dan dapat menangani overflow (penanganan dibebaskan tapi dijelaskan di video).
+
+Berikut batasan implementasi kalkulator:
+●	Penggunaan operator -, +, *, /, %, |, ^, & tidak diperbolehkan.
+●	Penggunaan if dan konstanta nilai diperbolehkan.
+●	Penggunaan makro #define diperbolehkan.
+●	Penggunaan looping (while, for), tidak diperbolehkan, kecuali saat membaca input.
+●	Penggunaan statement goto diperbolehkan.
+●	Tidak boleh mendeklarasikan variabel apapun (termasuk pembuatan method yang mengembalikan nilai).
+●	Presedensi operator adalah pangkat dan akar dikerjakan terlebih dahulu, sisanya mengikuti aturan kedatangan. 
+●	Input angka maksimal 3 digit. 
+
+Gunakan kode berikut sebagai langkah awal pengerjaan:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+	unsigned int bit1 : 1;
+	unsigned int bit2 : 1;
+	unsigned int bit3 : 1;
+	unsigned int bit4 : 1;
+	unsigned int bit5 : 1;
+	unsigned int bit6 : 1;
+	unsigned int bit7 : 1;
+	unsigned int bit8 : 1;
+} reg;
+
+reg reg1;
+reg reg2;
+reg reg3;
+reg reg4;
+
+int main(int argc, char* argv[]){
+	
+	FILE *file = fopen(argv[1], "r");
+	char c;
+
+	if (file == NULL) {
+		printf("File not found!\n");
+		exit(1);
+	}
+
+	while ((c = fgetc(file)) != EOF) {
+	}
+	
+    return 0;
+}
+
+Jika terasa terlalu sulit, kalian dapat menggunakan keringanan dibawah ini:
+●	[-0.5] Menambah register tambahan reg5 dan reg6
+●	[-0.5] Mengerjakan hanya operator +, -, *, / (tidak mengerjakan operator %, r, dan ^)
+Video yang Dikumpulkan
+Buatlah sebuah video yang menunjukkan
+1.	Penjelasan singkat tentang cara kerja tiap operator dalam program, termasuk dengan peran masing-masing register.
+2.	Hitunglah hasil pengerjaan kalkulator dari masukan sebagai berikut (kalau semua operator dikerjakan):
+a.	5 + 3
+b.	6 - 2 ^ 3
+c.	10 - r9 
+d.	50 * 8 % 4
+e.	10 + 11 - 12 / 13 * r14^15 
+3.	Hitunglah hasil pengerjaan kalkulator dari masukan sebagai berikut (kalau hanya mengerjakan operator +, -, *, /):
+a.	5 + 3
+b.	3 * 3 / 3
+c.	9 / 4 / 2
+d.	20 + 9 * 30
+e.	9 - 20
+
+

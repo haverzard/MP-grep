@@ -1,0 +1,31 @@
+Crowdfunding Platform 
+Membuat aplikasi crowdfunding dengan ethereum backend
+Latar Belakang
+“Air tidak memiliki wujud. Dia hanya mengalir mengikuti jalan yang ada dihadapannya, memberikan kehidupan bagi semua makhluk yang berada disekitarnya. Pada tes ini, terdapat sebuah sumber air jernih di puncak sebuah gunung, namun desa-desa yang terletak di kaki gunung tersebut tidak memiliki akses ke sumber air itu. Tugasmu disini adalah untuk mengendalikan sumber air tersebut, dan membuat aliran baru untuk dihubungkan ke desa-desa, sehingga para warga desa dapat merasakan kehidupan dari sumber air tersebut ”
+
+Setelah mendengarkan penjelasan tersebut kamu pun… 
+a.	Kembali ke luar portal
+b.	Melaksanakan tantangannya (Lanjutkan membaca).
+Tujuan
+Tujuan tugas ini ada beberapa:
+●	Biar memahami cara membuat aplikasi web 3.0
+●	Biar memahami cara kerja smart contract
+●	Biar tidak bosan membuat backend dengan node/python/java lagi
+Spek Tugas
+Buatlah sebuah aplikasi web crowdfunding dengan ethereum backend. Aplikasi crowdfunding harus memenuhi beberapa spesifikasi sebagai berikut:
+●	Pengguna aplikasi dapat membuat campaign yang berisi deskripsi, goal, deadline, serta paket pendanaan
+●	Pengguna aplikasi yang membuat campaign mendapatkan langsung hasil crowdfunding setelah goal terpenuhi
+●	Pengguna aplikasi dapat mendanai suatu campaign sesuai dengan paket pendanaan yang tersedia
+●	Pengguna aplikasi yang mendanai campaign namun tidak terpenuhi sebelum deadline maka akan mendapatkan uangnya kembali
+●	Pengguna aplikasi dapat melihat campaign miliknya serta riwayat campaign yang pernah didanai
+●	Seluruh bentuk pendanaan menggunakan ethereum
+
+Tips: Gunakan ethereum test network atau local network untuk melakukan testing pada aplikasi anda sehingga tidak perlu mengeluarkan uang untuk membeli ethereum.
+Batasan
+●	Aplikasi harus dapat dijalankan pada web browser dengan dukungan web3. Disarankan menggunakan extension Metamask untuk browser yang tidak memiliki dukungan native untuk web3.
+●	Bahasa dan framework yang digunakan untuk membangun frontend dibebaskan.
+●	Bahasa untuk membangun smart contract bebas selain vyper.
+●	Dilarang menggunakan library apapun untuk membangun smart contract (jika ada library yang membantu).
+Video yang Dikumpulkan
+Buatlah sebuah video (sebisa mungkin screen record) yang menunjukkan seluruh spesifikasi pada spek beserta transaction yang dibuatnya.
+

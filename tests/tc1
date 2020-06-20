@@ -1,0 +1,45 @@
+String Finder
+Implementasi “grep” secara paralel
+Latar Belakang
+“Cahaya akan menerangi semua dan mengusir kegelapan. Di hadapan cahaya itu sendiri, tidak ada sesuatu pun yang dapat tersembunyi darinya. Pada tes ini, kamu akan ditempatkan di sebuah labirin yang gelap. Terdapat berbagai harta karun di dalam labirin tersebut, dan kamu akan diberikan beberapa sumber cahaya untuk membantumu menemukannya. Tugasmu adalah menggunakan cahaya yang kamu miliki dengan sebaik mungkin untuk menemukan harta karun yang kamu cari”
+
+Setelah mendengarkan penjelasan tersebut kamu pun… 
+a.	Kembali ke luar portal
+b.	Melaksanakan tantangannya (Lanjutkan membaca).
+Spek Tugas
+Buatlah program yang mengimplementasikan “grep” secara paralel
+1.	Program harus dibuat dengan pemrosesan secara paralel.
+2.	Pencarian file dilakukan dengan multiprocessing.
+3.	Pencarian string di dalam file dilakukan dengan multithreading.
+4.	Program menerima 3 buah argumen, yaitu:
+a.	Banyaknya proses,
+b.	Banyaknya thread, dan
+c.	String yang ingin dicari.
+5.	Program melakukan pencarian file dari current working directory.
+6.	Program mengeluarkan absolute path file jika menemukan string di dalam file tersebut.
+7.	Program menampilkan waktu yang digunakan untuk melakukan proses pencarian.
+8.	Tidak boleh menggunakan library eksternal tanpa seijin asisten sister.
+
+Program boleh menggunakan bahasa pemrograman apapun.
+
+Buat 3 versi program yang masing-masing mengimplementasi multiprocessing API:
+1.	[1] OpenMP
+2.	[1] OpenMPI
+3.	[1] CUDA
+
+Contoh: 
+kevin@sister:~$ ./sf 4 8 sister
+/home/kevin/brother.txt
+/home/kevin/New Folder (8)/sister.txt
+Found 2 file(s)
+Time elapsed: 2.09 ms
+
+Catatan: Program di atas hanya contoh. Anda dapat menambahkan atau membuat GUI.
+Video yang Dikumpulkan
+Buatlah sebuah video yang menunjukkan
+1.	Beberapa file yang mengandung test case string yang akan digunakan.
+2.	Cara menjalankan program.
+3.	Hasil output program untuk test case string tersebut.
+4.	Lakukan untuk 3 buah test case string berbeda.
+5.	Lakukan untuk 3 variasi jumlah process dan thread berbeda (jumlah dibebaskan)
+

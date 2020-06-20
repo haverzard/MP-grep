@@ -1,0 +1,25 @@
+Google Docs Sederhana
+Pada dua atau lebih perangkat berbeda
+Latar Belakang
+“Pikiran manusia memiliki potensi yang luar biasa. Namun biasanya manusia hanya menggunakan sebagian kecil dari kemampuan sebenarnya. Pada tes ini, kamu harus menyelesaikan suatu teki-teki. Terdapat 10 orang di sekitarmu. Hanya dengan mendapatkan petunjuk dari mereka semua barulah kamu akan mendapatkan jawaban dari teka-teki tersebut. Namun, masalahnya adalah tidak satupun dari mereka dapat berinteraksi dengan cara biasa. Satu-satunya cara untuk mendapatkan 10 petunjuk itu adalah dengan menggunakan potensi dari pikiran manusia, yaitu dengan berinteraksi dengan mereka langsung melalui pikiran.”
+
+Setelah mendengarkan penjelasan tersebut kamu pun… 
+a.	Kembali ke luar portal
+b.	Melaksanakan tantangannya (Lanjutkan membaca).
+Tujuan
+Tujuan tugas ini adalah:
+●	Membuat sebuah aplikasi web sederhana yang merupakan teks editor yang mendukung collaborative editing melibatkan dua perangkat atau lebih.
+Spek Tugas
+Buatlah sebuah aplikasi collaborative editing berbasis web yang memiliki spesifikasi sebagai berikut:
+●	Perubahan yang dilakukan pada teks dilakukan secara real time, semua perangkat yang mengakses file teks tersebut selalu melihat versi terbaru dari teks tersebut.
+●	Hanya dapat diakses ketika online.
+Batasan
+●	Pada backend, dilarang menggunakan library eksternal selain websocket.
+●	Pada frontend, bebas menggunakan library eksternal.
+Video yang Dikumpulkan
+Buatlah sebuah video yang menunjukkan
+1.	Penggunaan aplikasi pada dua perangkat atau lebih.
+2.	Menambah teks pada sebuah perangkat dan memperlihatkan hasil penambahan teks pada semua perangkat. Lakukan langkah ini untuk sebuah perangkat lain.
+3.	Mengurangi teks pada sebuah perangkat dan memperlihatkan hasil penambahan teks pada semua perangkat. Lakukan langkah ini untuk sebuah perangkat lain.
+
+

@@ -3,6 +3,7 @@ Creating a simple grep using multiprocessing api (OpenMP). ***It's worse than no
 
 ## Prerequisite
 - g++
+- Linux Operating System
 
 ## Usage
 ### Compile worker
