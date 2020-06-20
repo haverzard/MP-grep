@@ -70,7 +70,7 @@ int subprocess(string filename, string pattern, int thread_counts) {
     int string_c_length = text.length()-pattern.length()+1;
     int inc = string_c_length / thread_counts;
     bool found = false;
-    #pragma omp parallel for num_threads(thread_counts) firstprivate(text, string_c_length, inc) shared(found)
+    #pragma omp parallel for num_threads(thread_counts)
     for (int i = 0; i < thread_counts; i++)
     {
         int begin = i*inc;
